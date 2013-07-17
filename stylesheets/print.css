@@ -224,3 +224,6 @@ footer a {
 .clearfix {display: inline-block;}
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
+
+strong { font-weight: bold; }
+em { text-style: italic; }
