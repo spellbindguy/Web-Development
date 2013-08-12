@@ -482,3 +482,5 @@ footer a:hover {
 
 #sidebar h3 { font-weight: bold; }
 #sidebar ul li { margin-bottom: 10px; list-style-type: none; }
+
+em { font-style: italic; }
