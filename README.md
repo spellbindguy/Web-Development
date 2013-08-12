@@ -1,4 +1,1 @@
-Web-Development
-===============
-
-Class on HTML, CSS, JavaScript, PHP, and MySQL
+# [Go to Class Website](http://moosader.github.io/Web-Development)
