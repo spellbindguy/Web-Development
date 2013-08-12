@@ -480,7 +480,10 @@ footer a:hover {
 
 
 
-#sidebar h3 { font-weight: bold; }
-#sidebar ul li { margin-bottom: 10px; list-style-type: none; }
+#sidebar h3 { font-weight: bold; font-size: 16px; text-decoration: underline; }
+#sidebar ul li { margin-bottom: 10px; list-style-type: none; font-size: 14px; }
+#sidebar ul li a { font-weight: bold; }
 
-em { font-style: italic; }
+
+#sidebar em, em { font-style: italic; }
+#sidebar strong { font-weight: bold; }
