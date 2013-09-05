@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Layout</title>
+		
+		<style type="text/css">
+			ul li { float: left; }
+			
+			/* Fix #1 */
+			.clear { clear: both; }
+			
+			/* Fix #2 */
+			.cf:before,
+			.cf:after {
+				content: " "; /* 1 */
+				display: table; /* 2 */
+			}
+
+			.cf:after {
+				clear: both;
+			}
+		</style>
+	</head>
+	
+	<body>
+		
+		<div class="content-wrapper full-page highlight">
+		</div>
+		
+		<h1>My Webpage</h1>
+		
+		<h2>Navigation:</h2>
+		<!-- Fix 1 -->
+		<ul>
+			<li><p>ITEM1</p></li>
+			<li><p>ITEM2</p></li>
+			<li><p>ITEM3</p></li>
+			
+			<div class="clear"></div>
+		</ul>
+		
+		<!-- Fix 2 -->
+		<ul class="cf navList">
+			<li><p>ITEM1</p></li>
+			<li><p>ITEM2</p></li>
+			<li><p>ITEM3</p></li>
+		</ul>
+		
+		<!-- No Fix -->
+		<ul>
+			<li><p>ITEM1</p></li>
+			<li><p>ITEM2</p></li>
+			<li><p>ITEM3</p></li>
+		</ul>
+		
+		
+		<h2>Stuff:</h2>
+		<p>I like turtles</p>
+		
+	</body>
+</html>
