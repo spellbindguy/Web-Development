@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>It's a webpage</title>
+		
+		<style type="text/css">
+			
+			body { background: #82BDF6; }
+			
+			nav ul li { float: left; list-style-type: none; margin-left: 20px; }
+			nav a, nav a:active { color: #000000; text-decoration: none; }
+			nav a:hover { text-decoration: underline; }
+	
+			.cf:before,
+			.cf:after {
+				content: " "; /* 1 */
+				display: table; /* 2 */
+			}
+
+			.cf:after {
+				clear: both;
+			}
+			
+			.main-content-wrapper { width: 960px; margin: 0 auto; background: #ffffff; border: solid 1px #aaaaaa;
+				font-family: "arial"; }
+				
+			.main-content { margin: 20px; }
+			
+			footer { font-size: 11px; text-align: center; }
+			
+		</style>
+	</head>
+	
+	<body>
+		
+		<header>
+			<h1>Header</h1>
+			
+			
+			<nav>
+				<ul class="cf">
+					<li><a href="index.html" title="home">Home</a></li>
+					<li><a href="about.html" title="about">About</a></li>
+					<li><a href="stuff.html" title="stuff">Stuff</a></li>
+				</ul>
+			</nav>
+			
+		</header>
+		
+		<div class="main-content-wrapper">
+			<div class="main-content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+				
+				<textarea name="special"></textarea>
+			</div>
+		</div> <!-- end main-content-wrapper -->
+
+		<footer>
+			&copy; 2000 - 2013
+		</footer>
+		
+	</body>
+</html>
