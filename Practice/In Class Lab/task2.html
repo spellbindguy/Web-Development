@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			/*
+			For the given HTML Markup, WRITE ONLY CSS to style the webpage
+			according to these instructions.  Use the task2sample.png image
+			to verify the style.
+			*/
+			
+			
+			/* 1. Style the ELEMENT body so that:
+				* its background color is #ebdfa6
+				* its font color is #5f3b14
+				* the font family used by default is serif
+				*/
+			body {
+				background: #ebdfa6;
+				color: #5f3b14;
+				font-family: serif; 
+			}
+			
+			
+			/* 2. Style both the ELEMENT h1 and the ELEMENT h2 with one CSS rule so that:
+				* the font family is set to "arial" and serif
+				* the text is written in italics
+				*/
+			h1, h2 { 
+				font-family: "arial", serif;
+				font-style: italic;
+			}
+			
+			
+			/* 3. Style the ELEMENT header so that:
+				* its width is 960 pixels
+				* center this element by settings its left and right margin
+				*/
+			header { 
+				width: 960px; 
+				margin: 0 auto;
+			}
+			
+			
+			/* 4. Style the CLASS banner-container within the ELEMENT header so that:
+				* its background is #c92828
+				* its text color is #580000
+				* the alignment of its text is centered
+				*/
+			header .banner-container {
+				background: #c92828;
+				color: #580000;
+				text-align: center;
+			}
+			
+			
+			/* 5. Style the ELEMENT nav within the ELEMENT header so that:
+				* the background is #5f3b14
+				*/
+			header nav {
+				background: #5f3b14;
+			}
+			
+			
+			/* 6. Style the ELEMENT li within the ELEMENT ul within the ELEMENT nav within the element HEADER so that:
+				* the list does not have bullets
+				* every list item is floating to the left
+				* width of 100 pixels
+				* give it a border with the style outset, a thickness of 2 pixels, and the color #3b2105
+				* set the margin to 0 vertically and 5 pixels horizontally
+				* background color is #8f5e29
+				* the text alignment is centered
+				*/
+			header nav ul li { 
+				list-style-type: none;
+				float: left;
+				width: 100px;
+				border: outset 2px #3b2105;
+				margin: 0 5px;
+				background: #8f5e29;
+				text-align: center;
+			}
+			
+			
+			/* 7. Style the ELEMENT a within the ELEMENT li within the ELEMENT ul within the ELEMENT nav within the element HEADER so that:
+				* the text color is #ebdfa6
+				* the text has NO underline
+				*/
+			header nav ul li a { 
+				color: #ebdfa6;
+				text-decoration: none;
+			}
+			
+			
+			/* 8. Style the ELEMENT h2 so that:
+				* the text alignment is centered
+				*/
+			h2 { 
+				text-align: center;
+			}				
+			
+			
+			/* 9. Style the CLASS main-container so that:
+				* Its width is 90% of the page
+				* center this element by settings its left and right margin
+				* set its border to a ridge style, with a thickness of 3 pixels, and the color #5f3b14
+				* set its padding to 10 pixels vertically, 20 pixels horizontally
+				* set its background color to #fff7d1
+				*/
+			.main-container { 
+				width: 90%; 
+				margin: 0 auto;
+				border: ridge 3px #5f3b14;
+				padding: 10px 20px;	
+				background: #fff7d1;
+			}
+			
+			
+			/* 10. Style the ELEMENT p within the CLASS main-container so that:
+				* the text indentation is 30 pixels
+				* the text alignment is justified
+				*/
+			.main-container p { 
+				text-indent: 30px;
+				text-align: justify;
+			}
+			
+			
+			/* 11. Style the ELEMENT hr so that:
+				* background color is #5f3b14
+				* there is no border
+				* its height is 10 pixels
+				* its width is 75%
+				* its horizontal margins are set to auto
+				* its bottom margin is set to 50 pixels
+				*/
+			hr { 
+				background: #5f3b14;
+				border: none;
+				height: 10px;
+				width: 75%;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 50px;
+			}
+			
+			
+			/* 12. Style the ELEMENT footer so that:
+				* its top margin is set to 50 pixels
+				* its text alignment is centered
+				* its text color is #5f3b14
+				* its font-size is 11 pixels
+				*/
+			footer { 
+				margin-top: 50px;
+				text-align: center; 
+				color: #5f3b14; 
+				font-size: 11px; 
+			}
+			
+			
+			/* 13. 
+				Use either the Clearfix classes http://nicolasgallagher.com/micro-clearfix-hack/
+				or define a	Clear class to fix the floating issue.
+				*/
+		</style>
+	</head>
+	
+	<body>
+		
+		<header>
+			<div class="banner-container">
+				<h1>Vivamus fermentum semper porta.</h1>
+			</div>
+			
+			<nav>
+				<ul class="cf"> <!-- Float fix #1 -->
+					<li><a href="#TopicA">Topic A</a></li>
+					<li><a href="#TopicB">Topic B</a></li>
+					<li><a href="#TopicC">Topic C</a></li>
+					<li><a href="#TopicD">Topic D</a></li>
+					<li><a href="#TopicE">Topic E</a></li>
+					<div class="clear"></div> <!-- Float fix #2 -->
+				</ul>
+			</nav>
+		</header>
+		
+		<div class="main-container">
+			<h2><a name="TopicA">Topic A</a></h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.
+			</p>
+			<hr/>
+			
+			<h2><a name="TopicB">Topic B</a></h2>
+			<p>
+				Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum. Ut dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.
+			</p>
+			<hr/>
+			
+			<h2><a name="TopicC">Topic C</a></h2>
+			<p>
+				Suspendisse lectus leo, consectetur in tempor sit amet, placerat quis neque. Etiam luctus porttitor lorem, sed suscipit est rutrum non. Curabitur lobortis nisl a enim congue semper. Aenean commodo ultrices imperdiet. Vestibulum ut justo vel sapien venenatis tincidunt. Phasellus eget dolor sit amet ipsum dapibus condimentum vitae quis lectus. Aliquam ut massa in turpis dapibus convallis. Praesent elit lacus, vestibulum at malesuada et, ornare et est. Ut augue nunc, sodales ut euismod non, adipiscing vitae orci. Mauris ut placerat justo. Mauris in ultricies enim. Quisque nec est eleifend nulla ultrices egestas quis ut quam. Donec sollicitudin lectus a mauris pulvinar id aliquam urna cursus. Cras quis ligula sem, vel elementum mi. Phasellus non ullamcorper urna.
+			</p>
+			<hr/>
+			
+			<h2><a name="TopicD">Topic D</a></h2>
+			<p>
+				Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In euismod ultrices facilisis. Vestibulum porta sapien adipiscing augue congue id pretium lectus molestie. Proin quis dictum nisl. Morbi id quam sapien, sed vestibulum sem. Duis elementum rutrum mauris sed convallis. Proin vestibulum magna mi. Aenean tristique hendrerit magna, ac facilisis nulla hendrerit ut. Sed non tortor sodales quam auctor elementum. Donec hendrerit nunc eget elit pharetra pulvinar. Suspendisse id tempus tortor. Aenean luctus, elit commodo laoreet commodo, justo nisi consequat massa, sed vulputate quam urna quis eros. Donec vel. 
+			</p>
+			<hr/>
+			
+			<h2><a name="TopicE">Topic E</a></h2>
+			<p>
+				 Curabitur lobortis nisl a enim congue semper. Aenean commodo ultrices imperdiet. 
+				 Vestibulum ut justo vel sapien venenatis tincidunt. 
+				 Phasellus eget dolor sit amet ipsum dapibus condimentum vitae quis lectus.
+			</p>
+		</div>
+		
+		<footer>
+			&copy; 2013, osmco
+		</footer>
+		
+	</body>
+</html>
