@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style type="text/css">
+			/* Write your CSS here */
+			
+			/* 1. Style the CLASS column-container so that:
+				* its width is 960 pixels
+				* its border is 2 pixels wide, dashed style, and the color #666666;
+				* center this element by setting its left and right margin (do you remember how?)
+				*/
+			.column-container { 
+				width: 960px; 
+				border: dashed 2px #666666; 
+				margin: 0 auto;
+			}
+			
+			/* 2. Style the CLASS column so that:
+				* It has a border that is 2 pixels thick, dotted style, and the color black.
+				*/
+			.column-container .column {
+				border: dotted 2px #000000;
+			}
+			
+			/* 3. Style the CLASS column-1 within the CLASS column-container so that:
+				* It floats on the left side
+				* Its background is grey (#aaaaaa)
+				* Its width is 200 pixels wide
+				*/		
+			.column-container .column-1 { 
+				float: left;
+				background: #aaaaaa;
+				width: 200px;
+			}
+			
+			/* 4. Style the CLASS column-2 within the CLASS column-container so that:
+				* It floats on the right side
+				* the background is grey (#aaaaaa)
+				* Its width is 700 pixels wide
+			*/
+			.column-container .column-2 {
+				float: right;
+				background: #aaaaaa;
+				width: 700px;
+			}
+			
+			/* 5. Style the CLASS content-container so that:
+				* Its margin on every side is 20 pixels
+				*/
+			.content-container { 
+				margin: 20px;
+			}
+			
+			/* 6. Style the ELEMENT p within the CLASS content-container so that:
+				* The text indentation is 30 pixels
+				*
+				* Note that we do not want to indent headers, so this is why we specify
+				* just paragraph tags within this class.
+				*/
+			.content-container p {
+				text-indent: 30px;
+			}
+			
+			/* 7. Style the ELEMENT h1 so that its font size is 20 pixels */
+			h1 { font-size: 20px; }
+			
+			
+			/* 8. Style the ELEMENT h2 so that its font size is 15 pixels */
+			h2 { font-size: 15px; }
+			
+			/* 9. Style both the ELEMENT h1 and the ELEMENT h2 with one CSS rule so that:
+				* They both have an underline text decoration.
+				*/
+			h1, h2 { text-decoration: underline; }
+			
+			/* 10. 
+				Use either the Clearfix classes (Google it) or define a
+				Clear class to fix the floating issue.
+				*/
+			.clear { clear: both; }
+		</style>
+	</head>
+	
+	<body>
+		
+		<div class="column-container cf">
+			<div class="column column-1">
+				<div class="content-container">
+					<h1>About cheeseburgers</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. 
+						Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor.
+					</p>
+					
+					<p>
+						Praesent et diam eget libero egestas mattis sit amet vitae augue. 
+						Nam tincidunt congue enim, ut porta lorem lacinia consectetur.
+					</p>
+				</div>
+			</div>
+			
+			<div class="column column-2">
+				<div class="content-container">
+					<h2>Why buy cheeseburgers?</h2>
+					<p>
+						Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, 
+						consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, 
+						adipiscing id dolor.
+					</p>
+					
+					<h2>Health benefits of cheeseburgers</h2>
+					<p>
+						Pellentesque auctor nisi id magna consequat sagittis. 
+						Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. 
+						Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. 
+					</p>
+					
+					<h2>Cheeseburgers throughout the centuries</h2>
+					<p>
+						 Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. 
+						 Cum sociis natoque penatibus et magnis dis parturient montes, 
+						 nascetur ridiculus mus. In rutrum accumsan ultricies. 
+						 Mauris vitae nisi at sem facilisis semper ac in est.
+					</p>
+				</div>
+			</div>
+			
+			<div class="clear"></div>
+		</div>
+		
+	</body>
+</html>
