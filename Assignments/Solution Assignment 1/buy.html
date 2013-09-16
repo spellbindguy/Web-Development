@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Band page</title>
+	</head>
+	<body>
+	
+		<h1>Buy albums</h1>
+		
+		<form method="get">
+			<h2>Order form</h2>
+			
+			<p>
+				<label for="paypal-name">Paypal Username:</label>
+				<input type="text" name="paypal-name" id="paypal-name" />
+			</p>
+			
+			<p>
+				<label for="paypal-password">Paypal Password:</label>
+				<input type="password" name="paypal-password" id="paypal-password" />
+			</p>
+			
+			<p>
+				<label for="state">State:</label>
+				
+				<select name="state" id="state">
+					<option value="kansas">KS</option>
+					<option value="missouri">MO</option>
+				</select>
+			</p>
+			
+			<p>
+				<input type="radio" name="album" id="album-one" value="one" />
+				<label for="album-one">One</label>
+				
+				<input type="radio" name="album" id="album-two" value="two" />
+				<label for="album-two">Two</label>
+				
+				<input type="radio" name="album" id="album-three" value="three" />
+				<label for="album-three">Three</label>
+			</p>
+			
+			<p>
+				<input type="checkbox" name="include-tshirt" id="include-tshirt" />
+				<label for="include-tshirt">Include tshirt?</label>
+			</p>
+			
+			<p>
+				Special order instructions:<br/>
+				<textarea name="special" id="special"></textarea>
+			</p>
+			
+			<p>
+				<input type="submit" name="buy-form" value="Submit" />
+			</p>
+		</form>
+		
+		<div class="navigation">
+			<ul>
+				<li><a href="index.html">Index</a></li>
+				<li><a href="albums.html">Albums</a></li>
+				<li><a href="concerts.html">Concerts</a></li>
+				<li><a href="buy.html">Buy Album</a></li>
+			</ul>
+		</div>
+	
+	</body>
+</html>
