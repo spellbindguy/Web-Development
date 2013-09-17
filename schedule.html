@@ -32,204 +32,536 @@
 		<h2>Semester Schedule</h2>
 		
 		<style type="text/css">
-			.group { color: #ff4e00; }
-			.solo { color: #0000ff; }
-			.holiday { color: #11a329; }
-			.final { color: #ff0000; }
 			.header { padding-top: 20px; font-weight: bold; }
+			
+			.cf:before,
+			.cf:after {
+				content: " "; /* 1 */
+				display: table; /* 2 */
+			}
+
+			.cf:after {
+				clear: both;
+			}
+
+			
+			.calendar-container { width: 100%; }
+			.month { margin: 50px 0; }
+			.month .week .cell { height: 100px;
+				color: #666666; }
+			.week { clear: both; }
+			.week .cell .assignment { font-size: 11px; color: #000000; clear: both; display: block; }
+			h2 { text-align: center; }
+			
+			.header { clear: both; }
+			.header .cell { height: 25px; }
+			
+			.header .cell,
+			.week .cell { width: 13%; float: left; border: solid 1px #aaaaaa; }
+			
+			.tr { background: #aaffff; }
+			
+			.holiday { background: #aaffaa; }
+			
+			.group { color: #ff4e00 !important; }
+			.solo { color: #0000ff !important; }
+			.final { color: #ff0000 !important; }
 		</style>
 		
-		<table>			
-			<tbody>
+		<div class="calendar-container">
+			<div class="month">
+				<h2>August</h2>
 				
-				<tr>
-					<td colspan="3" class="header">Sprint 1</td>
-				</tr>
+				<div class="header cf">
+					<div class="cell">Sunday</div>
+					<div class="cell">Monday</div>
+					<div class="cell tr">Tuesday</div>
+					<div class="cell">Wednesday</div>
+					<div class="cell tr">Thursday</div>
+					<div class="cell">Friday</div>
+					<div class="cell">Saturday</div>
+				</div>
 				
-				<tr>
-					<td>August 22</td>
-					<td>Thursday</td>
-					<td class="group">
-						Turn in Team Breakdown
-					</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell"></div>
+					<div class="cell">1</div>
+					<div class="cell">2</div>
+					<div class="cell">3</div>
+				</div>
 				
-				<tr>
-					<td>August 29</td>
-					<td>Thursday</td>
-					<td class="group">
-						Project plan due<br/>
-						Sprint 1 Tentative Plan due
-					</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell">4</div>
+					<div class="cell">5</div>
+					<div class="cell">6</div>
+					<div class="cell">7</div>
+					<div class="cell">8</div>
+					<div class="cell">9</div>
+					<div class="cell">10</div>
+				</div>
 				
-				<tr>
-					<td>September 5</td>
-					<td>Thursday</td>
-					<td class="solo">Personal Assignment 1 due</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell">11</div>
+					<div class="cell">12</div>
+					<div class="cell">13</div>
+					<div class="cell">14</div>
+					<div class="cell">15</div>
+					<div class="cell">16</div>
+					<div class="cell">17</div>
+				</div>
 				
-				<tr>
-					<td>September 12</td>
-					<td>Thursday</td>
-					<td class="solo">Personal Assignment 2 due</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell">18</div>
+					<div class="cell">19</div>
+					<div class="cell tr">20</div>
+					<div class="cell">21</div>
+					<div class="cell tr">22
+						<span class="assignment group">Turn in team breakdown</span>
+					</div>
+					<div class="cell">23</div>
+					<div class="cell">24</div>
+				</div>
 				
-				<tr>
-					<td>September 17</td>
-					<td>Tuesday</td>
-					<td class="group">
-						Sprint 1 over<br/>
-						Screenshot showcase due before class
-					</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell">25</div>
+					<div class="cell">26</div>
+					<div class="cell tr">27</div>
+					<div class="cell">28</div>
+					<div class="cell tr">29
+						<span class="assignment group">Project plan due</span>
+						<span class="assignment group">Sprint 1 plan due</span>
+					</div>
+					<div class="cell">30</div>
+					<div class="cell">31</div>
+				</div>
+			</div>
+			
+			<div class="month">
+				<h2>September</h2>
 				
-				<tr>
-					<td colspan="3" class="header">Sprint 2</td>
-				</tr>
+				<div class="header cf">
+					<div class="cell">Sunday</div>
+					<div class="cell">Monday</div>
+					<div class="cell tr">Tuesday</div>
+					<div class="cell">Wednesday</div>
+					<div class="cell tr">Thursday</div>
+					<div class="cell">Friday</div>
+					<div class="cell">Saturday</div>
+				</div>
 				
-				<tr>
-					<td>September 24</td>
-					<td>Tuesday</td>
-					<td class="group">
-						Sprint 2 Plan due
-					</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell">1
+					</div>
+					<div class="cell">2
+					</div>
+					<div class="cell tr">3
+					</div>
+					<div class="cell">4
+					</div>
+					<div class="cell tr">5
+						<span class="assignment solo">Solo Assignment 1 due</span>
+					</div>
+					<div class="cell">6
+					</div>
+					<div class="cell">7
+					</div>
+				</div>
 				
-				<tr>
-					<td>September 23</td>
-					<td>Tuesday</td>
-					<td class="group">
-						Sprint 1 Postmortem due
-					</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell">8
+					</div>
+					<div class="cell">9
+					</div>
+					<div class="cell tr">10
+					</div>
+					<div class="cell">11
+					</div>
+					<div class="cell tr">12
+						<span class="assignment solo">Solo Assignment 2 due</span>
+					</div>
+					<div class="cell">13
+					</div>
+					<div class="cell">14
+					</div>
+				</div>
 				
-				<tr>
-					<td>September 26</td>
-					<td>Thursday</td>
-					<td class="solo">Personal Assignment 3 due</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell">15
+					</div>
+					<div class="cell">16
+					</div>
+					<div class="cell tr">17
+						<span class="assignment group">Sprint 1 over</span>
+						<span class="assignment group">Screenshot showcase due</span>
+					</div>
+					<div class="cell">18
+					</div>
+					<div class="cell tr">19
+					</div>
+					<div class="cell">20
+					</div>
+					<div class="cell">21
+					</div>
+				</div>
 				
-				<tr>
-					<td>October 3</td>
-					<td>Thursday</td>
-					<td class="solo">Personal Assignment 4 due</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell">22
+					</div>
+					<div class="cell">23
+					</div>
+					<div class="cell tr">24
+						<span class="assignment group">Sprint 2 plan due</span>
+						<span class="assignment solo">Sprint 1 postmortem due</span>
+					</div>
+					<div class="cell">25
+					</div>
+					<div class="cell tr">26
+						<span class="assignment solo">Solo Assignment 3 due</span>
+					</div>
+					<div class="cell">27
+					</div>
+					<div class="cell">28
+					</div>
+				</div>
 				
-				<tr>
-					<td>October 10</td>
-					<td>Thursday</td>
-					<td class="group">
-						Sprint 2 over<br/>
-						Screenshot showcase due before class
-					</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell">29
+					</div>
+					<div class="cell">30
+					</div>
+					<div class="cell tr">
+					</div>
+					<div class="cell">
+					</div>
+					<div class="cell tr">
+					</div>
+					<div class="cell">
+					</div>
+					<div class="cell">
+					</div>
+				</div>
+			</div>
+			
+			<div class="month">
+				<h2>October</h2>
 				
-				<tr>
-					<td colspan="3" class="header">Sprint 3</td>
-				</tr>
+				<div class="header cf">
+					<div class="cell">Sunday</div>
+					<div class="cell">Monday</div>
+					<div class="cell tr">Tuesday</div>
+					<div class="cell">Wednesday</div>
+					<div class="cell tr">Thursday</div>
+					<div class="cell">Friday</div>
+					<div class="cell">Saturday</div>
+				</div>
 				
-				<tr>
-					<td>October 15</td>
-					<td>Tuesday</td>
-					<td class="group">
-						Sprint 3 Plan due
-					</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell">
+					</div>
+					<div class="cell">
+					</div>
+					<div class="cell tr">1
+					</div>
+					<div class="cell">2
+					</div>
+					<div class="cell tr">3
+						<span class="assignment solo">Solo Assignment 4 due</span>
+					</div>
+					<div class="cell">4
+					</div>
+					<div class="cell">5
+					</div>
+				</div>
 				
-				<tr>
-					<td>October 15</td>
-					<td>Tuesday</td>
-					<td class="group">
-						Sprint 2 Postmortem due
-					</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell">6
+					</div>
+					<div class="cell">7
+					</div>
+					<div class="cell tr">8
+					</div>
+					<div class="cell">9
+					</div>
+					<div class="cell tr">10
+						<span class="assignment group">Sprint 2 over</span>
+						<span class="assignment group">Screenshot showcase due</span>
+					</div>
+					<div class="cell">11
+					</div>
+					<div class="cell">12
+					</div>
+				</div>
 				
-				<tr>
-					<td>October 24</td>
-					<td>Thursday</td>
-					<td class="solo">Personal Assignment 5 due</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell">13
+					</div>
+					<div class="cell">14
+					</div>
+					<div class="cell tr">15
+						<span class="assignment group">Sprint 3 plan due</span>
+						<span class="assignment solo">Sprint 2 postmortem due</span>
+					</div>
+					<div class="cell">16
+					</div>
+					<div class="cell tr">17
+						<span class="assignment solo">Solo Assignment 5 due</span>
+					</div>
+					<div class="cell">18
+					</div>
+					<div class="cell">19
+					</div>
+				</div>
 				
-				<tr>
-					<td>October 31</td>
-					<td>Thursday</td>
-					<td class="solo">Personal Assignment 6 due</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell">20
+					</div>
+					<div class="cell">21
+					</div>
+					<div class="cell tr">22
+					</div>
+					<div class="cell">23
+					</div>
+					<div class="cell tr">24
+						<span class="assignment solo">Solo Assignment 6 due</span>
+					</div>
+					<div class="cell">25
+					</div>
+					<div class="cell">26
+					</div>
+				</div>
 				
-				<tr>
-					<td>November 7</td>
-					<td>Thursday</td>
-					<td class="group">
-						Sprint 3 over<br/>
-						Screenshot showcase due before class
-					</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell">27
+					</div>
+					<div class="cell">28
+					</div>
+					<div class="cell tr">29
+					</div>
+					<div class="cell">30
+					</div>
+					<div class="cell tr">31
+						<span class="assignment solo">Solo Assignment 7 due</span>
+					</div>
+					<div class="cell">
+					</div>
+					<div class="cell">
+					</div>
+				</div>
+			</div>
+			
+			<div class="month">
+				<h2>November</h2>
 				
-				<tr>
-					<td colspan="3" class="header">Sprint 4</td>
-				</tr>
+				<div class="header cf">
+					<div class="cell">Sunday</div>
+					<div class="cell">Monday</div>
+					<div class="cell tr">Tuesday</div>
+					<div class="cell">Wednesday</div>
+					<div class="cell tr">Thursday</div>
+					<div class="cell">Friday</div>
+					<div class="cell">Saturday</div>
+				</div>
 				
-				<tr>
-					<td>November 12</td>
-					<td>Tuesday</td>
-					<td class="group">
-						Sprint 3 Plan due
-					</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell">
+					</div>
+					<div class="cell">
+					</div>
+					<div class="cell tr">
+					</div>
+					<div class="cell">
+					</div>
+					<div class="cell tr">
+					</div>
+					<div class="cell">1
+					</div>
+					<div class="cell">2
+					</div>
+				</div>
 				
-				<tr>
-					<td>November 12</td>
-					<td>Tuesday</td>
-					<td class="group">
-						Sprint 3 Postmortem due
-					</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell">3
+					</div>
+					<div class="cell">4
+					</div>
+					<div class="cell tr">5
+					</div>
+					<div class="cell">6
+					</div>
+					<div class="cell tr">7
+						<span class="assignment group">Sprint 3 over</span>
+						<span class="assignment group">Screenshot showcase due</span>
+					</div>
+					<div class="cell">8
+					</div>
+					<div class="cell">9
+					</div>
+				</div>
 				
-				<tr>
-					<td>November 14</td>
-					<td>Thursday</td>
-					<td class="solo">Personal Assignment 8 due</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell">10
+					</div>
+					<div class="cell">11
+					</div>
+					<div class="cell tr">12
+						<span class="assignment group">Sprint 4 plan due</span>
+						<span class="assignment solo">Sprint 3 postmortem due</span>
+					</div>
+					<div class="cell">13
+					</div>
+					<div class="cell tr">14
+						<span class="assignment solo">Solo Assignment 8 due</span>
+					</div>
+					<div class="cell">15
+					</div>
+					<div class="cell">16
+					</div>
+				</div>
 				
-				<tr>
-					<td>November 21</td>
-					<td>Thursday</td>
-					<td class="solo">Personal Assignment 9 due</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell">17
+					</div>
+					<div class="cell">18
+					</div>
+					<div class="cell tr">19
+					</div>
+					<div class="cell">20
+					</div>
+					<div class="cell tr">21
+						<span class="assignment solo">Solo Assignment 9 due</span>
+					</div>
+					<div class="cell">22
+					</div>
+					<div class="cell">23
+					</div>
+				</div>
 				
-				<tr>
-					<td>Novemer 26</td>
-					<td>Tuesday</td>
-					<td class="holiday">Thanksgiving Holiday (no class)</td>
-				</tr>
+				<div class="week cf">
+					<div class="cell holiday">24
+					</div>
+					<div class="cell holiday">25
+					</div>
+					<div class="cell holiday">26
+						<span class="assignment holiday">Thanksgiving Break</span>
+					</div>
+					<div class="cell holiday">27
+					</div>
+					<div class="cell holiday">28
+						<span class="assignment holiday">Thanksgiving Break</span>
+					</div>
+					<div class="cell holiday">29
+					</div>
+					<div class="cell holiday">30
+					</div>
+				</div>
+			</div>
+			
+			<div class="month">
+				<h2>December</h2>
 				
-				<tr>
-					<td>Novemer 28</td>
-					<td>Thursday</td>
-					<td class="holiday">Thanksgiving Holiday (no class)</td>
-				</tr>
+				<div class="header cf">
+					<div class="cell">Sunday</div>
+					<div class="cell">Monday</div>
+					<div class="cell tr">Tuesday</div>
+					<div class="cell">Wednesday</div>
+					<div class="cell tr">Thursday</div>
+					<div class="cell">Friday</div>
+					<div class="cell">Saturday</div>
+				</div>
 				
+				<div class="week cf">
+					<div class="cell">1
+					</div>
+					<div class="cell">2
+					</div>
+					<div class="cell tr">3
+					</div>
+					<div class="cell">4
+					</div>
+					<div class="cell tr">5
+						<span class="assignment group">Sprint 4 over</span>
+						<span class="assignment group">Live demo in class</span>
+						<span class="assignment group">Final version of project due</span>
+					</div>
+					<div class="cell">6
+					</div>
+					<div class="cell">7
+						<span class="assignment solo">Sprint 4 postmortem due</span>
+					</div>
+				</div>
 				
-				<tr>
-					<td>December 5</td>
-					<td>Thursday</td>
-					<td class="group">
-						Sprint 4 over<br/>
-						Sprint 4 Postmortem due<br/>
-						Live demo presentation in class<br/>
-						Final version of project due
-					</td>
-				</tr>		
+				<div class="week cf">
+					<div class="cell">8
+					</div>
+					<div class="cell">9
+					</div>
+					<div class="cell tr">10
+						<span class="assignment final">Final Exam, 5:45 - 7:45 pm</span>
+					</div>
+					<div class="cell">11
+					</div>
+					<div class="cell">12
+					</div>
+					<div class="cell">13
+					</div>
+					<div class="cell">14
+					</div>
+				</div>
 				
-				<tr>
-					<td>December 10</td>
-					<td>Tuesday</td>
-					<td class="final">Final Exam at 5:45 - 7:45 pm</td>
-				</tr>		
+				<div class="week cf">
+					<div class="cell">15
+					</div>
+					<div class="cell">16
+					</div>
+					<div class="cell">17
+					</div>
+					<div class="cell">18
+					</div>
+					<div class="cell">19
+					</div>
+					<div class="cell">20
+					</div>
+					<div class="cell">21
+					</div>
+				</div>
 				
-			</tbody>
-		</table> 
+				<div class="week cf">
+					<div class="cell">22
+					</div>
+					<div class="cell">23
+					</div>
+					<div class="cell">24
+					</div>
+					<div class="cell">25
+					</div>
+					<div class="cell">26
+					</div>
+					<div class="cell">27
+					</div>
+					<div class="cell">28
+					</div>
+				</div>
+				
+				<div class="week cf">
+					<div class="cell">29
+					</div>
+					<div class="cell">30
+					</div>
+					<div class="cell">31
+					</div>
+					<div class="cell">
+					</div>
+					<div class="cell">
+					</div>
+					<div class="cell">
+					</div>
+					<div class="cell">
+					</div>
+				</div>
+			</div>
+		</div>
  
 		</section>
 
