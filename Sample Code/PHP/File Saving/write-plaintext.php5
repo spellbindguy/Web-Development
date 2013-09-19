@@ -12,10 +12,7 @@
 	$fileHandler = fopen( $filepath, "w" ); // Open for write
 	if ( $fileHandler == false ) 
 	{
-		echo( "<p>ERROR OPENING FILE</p>" );
-		echo( "<pre>" );
-		print_r( error_get_last() );
-		echo( "</pre>" );
+		print_r( error_get_last() );	// Error message (PHP5)
 		exit();	// Stop script
 	}
 	
@@ -26,3 +23,4 @@
 
 </body>
 </html>
+

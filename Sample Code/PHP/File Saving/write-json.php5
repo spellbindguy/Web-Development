@@ -15,14 +15,7 @@
 	$filepath = "files/output-json.json";
 
 	$fileHandler = fopen( $filepath, "w" ); // Open for write
-	if ( $fileHandler == false ) 
-	{
-		echo( "<p>ERROR OPENING FILE</p>" );
-		echo( "<pre>" );
-		print_r( error_get_last() );
-		echo( "</pre>" );
-		exit();	// Stop script
-	}
+	if ( $fileHandler == false ) { print_r( error_get_last() ); exit(); }
 	
 	fwrite( $fileHandler, json_encode( $content ) );
 
