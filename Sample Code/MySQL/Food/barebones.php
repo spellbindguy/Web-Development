@@ -1,9 +1,9 @@
 <?
 
-$hostname = 'db498096014.db.1and1.com';
-$database = 'db498096014';
-$username = 'dbo498096014';
-$password = 'sampledb';
+$hostname = '';
+$database = '';
+$username = '';
+$password = '';
 
 $connection = "mysql:host=" . $hostname . ";";
 $connection .= "dbname=" . $database;

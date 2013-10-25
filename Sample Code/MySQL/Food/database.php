@@ -1,10 +1,10 @@
 <?
 class Database
 {
-	private $hostname = 'db498096014.db.1and1.com';
-	private $database = 'db498096014';
-	private $username = 'dbo498096014';
-	private $password = 'sampledb';
+	private $hostname = '';
+	private $database = '';
+	private $username = '';
+	private $password = '';
 	
 	private $dbHandler = null;
 	private $debug = true;
