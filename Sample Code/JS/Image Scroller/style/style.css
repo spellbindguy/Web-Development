@@ -1,0 +1,12 @@
+
+div.scroller-container 
+{
+	width: 500px;
+	margin: 0 auto;
+	padding: 15px;
+	border: solid 1px #666666;
+}
+
+div.scroller-container img {
+	width: 500px;
+}
