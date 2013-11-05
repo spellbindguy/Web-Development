@@ -7,7 +7,11 @@
 		
 		<!-- <script src="alert.js"></script> -->
 		<!-- <script src="select-elements.js"></script> -->
-		<script src="select-elements.js"></script>
+		<!-- <script src="select-elements.js"></script> -->
+		<!-- <script src="modify-css.js"></script> -->
+		<!-- <script src="modify-html.js"></script> -->
+		<!-- <script src="modify-value.js"></script> -->
+		<script src="append.js"></script>
 	</head>
 	
 	<body>
@@ -17,8 +21,31 @@
 		<p class="text-item">Kiel vi?</p>
 		
 		<p><span>Hi, bob</span></p>
+		<p><span>Hi, jim</span></p>
+		<input type="button" id="change-html" value="Change" />
+		
+		<hr/>
 		
 		<input type="text" id="username" />
+		
+		<p>Change text color:</p>
+		<input type="button" id="toggle-css" value="Change" />
+		
+		<hr/>
+		
+		<p>Change value:</p>
+		<input type="button" value="Turn on subtitles" id="subtitles" />
+		
+		<hr/>
+		
+		<p>Append to the div</p>
+		<input type="text" id="append-value" />
+		<input type="button" id="append" value="Append" />
+		<br/>
+		
+		<div style="border: solid 1px #000000;" id="append-div">
+		
+		</div>
 		
 	</body>
 </html>
